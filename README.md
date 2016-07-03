@@ -27,34 +27,34 @@ OC 对象可以用C语言中的结构体表示，而方法可以用C函数来实
 
 ### runtime 有什么用？
 - 我们写的代码在程序运行过程中都会被转化成 runtime 的C代码执行
-OC的类、对象、方法在运行时，最终都转换成 C语言的 结构体、函数来执行。
-     可以在程序运行时创建，检查，修改类、对象和它们的方法。
+  - OC的类、对象、方法在运行时，最终都转换成 C语言的 结构体、函数来执行。
+  - 可以在程序运行时创建，检查，修改类、对象和它们的方法。
 
 - 常用于：
-      - 获取类的方法列表/参数列表；
-      - 方法调用；
-      - 方法拦截、动态添加方法；
-      - 方法替换： method swizzling
-      - 关联对象，动态添加属性；
+  - 获取类的方法列表/参数列表；
+  - 方法调用；
+  - 方法拦截、动态添加方法；
+  - 方法替换： method swizzling
+  - 关联对象，动态添加属性；
 
 ### runtime 怎么用？
 
 > 或者，说说你具体在项目中哪些地方用到过 runtime ？
 
 - runtime 的 API 提供了大量的函数来操作类和对象，如：
-    - 动态替换方法的实现、方法拦截：`class_replaceMethod`
-    - 获取对象的属性列表：`class_copyIvarList`
-    - 获取对象的方法列表： `class_copyMethodList`
-    - 动态添加属性: `class_addProperty`
-    - 动态添加方法： `class_addMethod`
-    - 获取方法名： `method_getName`
-    - 获取方法的实现： `class_getMethodImplementation`
+  - 动态替换方法的实现、方法拦截：`class_replaceMethod`
+  - 获取对象的属性列表：`class_copyIvarList`
+  - 获取对象的方法列表： `class_copyMethodList`
+  - 动态添加属性: `class_addProperty`
+  - 动态添加方法： `class_addMethod`
+  - 获取方法名： `method_getName`
+  - 获取方法的实现： `class_getMethodImplementation`
 
 - 具体应用：
-    - 给 category 添加属性： 
-        `给 UIAlertView 加 block 回调`
-    - 给系统的方法做替换，插入代码： 
-        `替换 viewDidLoad 方法的实现，NSLog 出每一个出现页面的类名`
+  - 给 category 添加属性： 
+    `给 UIAlertView 加 block 回调`
+  - 给系统的方法做替换，插入代码： 
+    `替换 viewDidLoad 方法的实现，NSLog 出每一个出现页面的类名`
 
 
 [系列博文地址](http://www.jianshu.com/p/d7818dcb21de)
