@@ -18,6 +18,7 @@
 		64280DBC1D27A83900FC0AA5 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 64280DBB1D27A83900FC0AA5 /* Aspects.m */; };
 		64468BD41D27E6E40080AC78 /* UIViewController+Logging.m in Sources */ = {isa = PBXBuildFile; fileRef = 64468BD31D27E6E40080AC78 /* UIViewController+Logging.m */; };
 		64468BE61D2824270080AC78 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64468BE51D2824270080AC78 /* OneViewController.m */; };
+		64468BE91D291F580080AC78 /* People+Super.m in Sources */ = {isa = PBXBuildFile; fileRef = 64468BE81D291F580080AC78 /* People+Super.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		64468BD31D27E6E40080AC78 /* UIViewController+Logging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Logging.m"; sourceTree = "<group>"; };
 		64468BE41D2824270080AC78 /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
 		64468BE51D2824270080AC78 /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		64468BE71D291F580080AC78 /* People+Super.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "People+Super.h"; sourceTree = "<group>"; };
+		64468BE81D291F580080AC78 /* People+Super.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "People+Super.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 			children = (
 				64280DB61D27A7D000FC0AA5 /* People.h */,
 				64280DB71D27A7D000FC0AA5 /* People.m */,
+				64468BE71D291F580080AC78 /* People+Super.h */,
+				64468BE81D291F580080AC78 /* People+Super.m */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64468BE91D291F580080AC78 /* People+Super.m in Sources */,
 				64280DBC1D27A83900FC0AA5 /* Aspects.m in Sources */,
 				64468BD41D27E6E40080AC78 /* UIViewController+Logging.m in Sources */,
 				64280DB81D27A7D000FC0AA5 /* People.m in Sources */,
@@ -381,7 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 琳 周 (VS2CRK66M7)";
 				INFOPLIST_FILE = RuntimeDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kds.RuntimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 琳 周 (VS2CRK66M7)";
 				INFOPLIST_FILE = RuntimeDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kds.RuntimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

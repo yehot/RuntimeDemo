@@ -70,23 +70,23 @@
     
 }
 
-- (void)testName {
-    Class peopleClass = NSClassFromString(@"People");
-    
-    // SEL : 方法名
-    SEL peopleRunSel = @selector(run);
-    
-    // Method : 包含一个方法的  方法名 + 实现 + 参数个数及类型 + 返回值个数及类型
-    Method methodRun = class_getInstanceMethod(peopleClass, peopleRunSel);
-
-    // 获取方法的实现
-    // 通过 类名 + 方法名获取
-    IMP impRun = class_getMethodImplementation(peopleClass, peopleRunSel);
-    
-    // 通过 method 获取 方法的实现
-    IMP imp = method_getImplementation(methodRun);
-    // 通过 method 获取 方法名
-    SEL selName = method_getName(methodRun);
+- (void)test1 {
+//    Class peopleClass = NSClassFromString(@"People");
+//    
+//    // SEL : 方法名
+//    SEL peopleRunSel = @selector(run);
+//    
+//    // Method : 包含一个方法的  方法名 + 实现 + 参数个数及类型 + 返回值个数及类型
+//    Method methodRun = class_getInstanceMethod(peopleClass, peopleRunSel);
+//
+//    // 获取方法的实现
+//    // 通过 类名 + 方法名获取
+//    IMP impRun = class_getMethodImplementation(peopleClass, peopleRunSel);
+//    
+//    // 通过 method 获取 方法的实现
+//    IMP imp = method_getImplementation(methodRun);
+//    // 通过 method 获取 方法名
+//    SEL selName = method_getName(methodRun);
 }
 
 
